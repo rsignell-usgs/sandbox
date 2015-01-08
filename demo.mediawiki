@@ -1,0 +1,22 @@
+== Stuff ==
+Blah
+
+== More stuff ==
+
+__TOC__
+
+== Chapter 1 ==
+
+Blah blah
+
+== Chapter 2 ==
+
+Blah wibble.
+
+== Appendix A ==
+
+The Sun is pretty big.<ref>E. Miller, The Sun, (New York: Academic Press, 2005), 23-5.</ref>
+The Moon, however, is not so big.<ref>R. Smith, "Size of the Moon", Scientific American, 46 (April 1978): 44-6.</ref>
+
+==Notes==
+<references />
