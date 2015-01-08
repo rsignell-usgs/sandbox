@@ -9,6 +9,10 @@ __TOC__
 
 Blah blah
 
+=== Section 1.1 ===
+
+Foo bar
+
 == Chapter 2 ==
 
 Blah wibble.
