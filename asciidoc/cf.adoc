@@ -6,7 +6,7 @@ Original authors:: Brian, ...
 
 Additional authors:: John, ...
 
-<<Standard name table format>>
+<<appendix-b-standard-name-table-format>>
 
 == Preface
 
