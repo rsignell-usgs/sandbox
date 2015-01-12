@@ -36,7 +36,7 @@ The ASCII format used to describe the ...
 
 === Overview
 
-No variable or ... <<Attributes>> contains a summary
+No variable or ... <<appendix-a-attributes>> contains a summary
 of all the attributes used in this convention.
 
 We recommend that the NUG defined attribute `Conventions` be given the string
