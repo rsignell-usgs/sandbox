@@ -7,11 +7,16 @@ __TOC__
 
 == Chapter 1 ==
 
-Blah blah
+This is a link to another page: [[other.mediawiki]]
+
+Links to somewhere else on this page:
+
+ - auto-anchors: [[#Chapter 2]], [[#Chatpter 2|custom link text]]
+ - custom anchors: [[#FooBar]]
 
 === Section 1.1 ===
 
-Foo bar
+<div id="FooBar">Foo bar</div>
 
 == Chapter 2 ==
 
