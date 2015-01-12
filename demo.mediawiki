@@ -27,5 +27,21 @@ Blah wibble.
 The Sun is pretty big.<ref>E. Miller, The Sun, (New York: Academic Press, 2005), 23-5.</ref>
 The Moon, however, is not so big.<ref>R. Smith, "Size of the Moon", Scientific American, 46 (April 1978): 44-6.</ref>
 
+== Appendix C ==
+
+{|
+!Modifier
+!Units
+!Description
+|-
+|<tt>detection_minimum</tt>
+|''u''
+| The smallest data values which is regarded as a detectable signal.
+|-
+|<tt>number_of_observations</tt>
+|1
+|The number of discrete observations or measurements from which a data value has been derived.
+|}
+
 ==Notes==
 <references />
