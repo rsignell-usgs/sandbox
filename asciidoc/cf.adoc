@@ -6,6 +6,8 @@ Original authors:: Brian, ...
 
 Additional authors:: John, ...
 
+<<Standard name table format>>
+
 == Preface
 
 Home page:: Contains links to: pervious draft and current ...
@@ -36,8 +38,11 @@ The ASCII format used to describe the ...
 
 === Overview
 
-No variable or ... <<Attributes>> 
+No variable or ...
+<<Attributes>> 
 <<Attributes,Some attributes>>
+<<Appendix A: Attributes>> 
+<<Appendix A: Attributes,Some attributes>>
 <<appendix-a-attributes>>
 <<appendix-a-attributes,more attributes>>
 contains a summary
