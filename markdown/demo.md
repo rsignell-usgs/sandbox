@@ -39,6 +39,9 @@ different sources to decide which quantities are comparable, and
 facilitates building applications with powerful extraction,
 regridding, and display capabilities.
 
+Link to [Appendix C](appendix-c.md),
+and [an anchor](appendix-c.md#table-c1-standard-name-modifiers).
+
 The CF conventions generalize and extend the COARDS conventions [
 COARDS ]. The extensions include metadata that provides a precise
 definition of each variable via specification of a standard name,
