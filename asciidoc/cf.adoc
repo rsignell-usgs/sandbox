@@ -21,16 +21,17 @@ Additional authors::
 * Alison
 * Martin
 
-<<appendix-b-standard-name-table-format>>
+[abstract]
+== Abstract
 
-<<intro>>
+This document describes the CF conventions ...
+
+toc::[]
 
 == Preface
 
 Home page:: Contains links to: pervious draft and current ...
 Revision history:: This document will be updated to reflect ...
-
-toc::[]
 
 :numbered:
 
@@ -91,6 +92,16 @@ include::chapter4.adoc[]
 *NB. This isn't very useful, as it doesn't turn up in the TOC.
 
 :!numbered:
+
+== Discrete sampling geometries
+
+Can we do a coloured table...?
+
+|===
+| (i1, o1) {set:cellbgcolor:red}| (i2, o1) | (i3, o1) | (i4, o1)
+| (i1, o2) | (i2, o2) | (i3, o2) | (i4, o2)
+| (i1, o3) | (i2, o3) | (i3, o3) | (i4, o3)
+|===
 
 [appendix]
 == Attributes
