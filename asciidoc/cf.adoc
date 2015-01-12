@@ -61,6 +61,11 @@ All CF attributes are listed here...
 |1e2|hecto|h| |1e-2|centi|c
 |===
 
+[appendix]
+== Standard name table format
+
+The CF standard name table is ...
+
 [bibliography]
 == Bibliography
 - [[[COARDS]]] Conventions for the standardization [sic] ...
