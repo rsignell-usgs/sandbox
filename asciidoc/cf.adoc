@@ -23,17 +23,12 @@ Additional authors::
 
 <<appendix-b-standard-name-table-format>>
 
-<<foo>>
-
 <<intro>>
 
 == Preface
 
 Home page:: Contains links to: pervious draft and current ...
 Revision history:: This document will be updated to reflect ...
-
-[[foo]]
-== Table of contents
 
 toc::[]
 
