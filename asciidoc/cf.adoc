@@ -1,0 +1,38 @@
+= NetCDF Climate and Forecast (CF) Metadata Conventions
+:toc:
+
+Original authors:: Brian, ...
+
+Additional authors:: John, ...
+
+== Preface
+
+Home page:: Contains links to: pervious draft and current ...
+Revision history:: This document will be updated to reflect ...
+
+:numbered:
+
+== Introduction
+
+=== Goals
+
+Blah blah blah ...
+
+== NetCDF files and components
+
+Blah ...
+
+== Description of the data
+
+=== Units
+
+Blah blah ...
+
+.Supported units
+|===
+|Factor|Prefix|Abbreviation| |Factor|Prefix|Abbreviation
+
+|1e1|deca,deka|da| |1e-1|deci|d
+
+|1e2|hecto|h| |1e-2|centi|c
+|===
