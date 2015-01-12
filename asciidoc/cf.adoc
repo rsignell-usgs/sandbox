@@ -36,3 +36,6 @@ Blah blah ...
 
 |1e2|hecto|h| |1e-2|centi|c
 |===
+
+
+include::chapter4.adoc[]
