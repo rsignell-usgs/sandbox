@@ -1,10 +1,25 @@
 = NetCDF Climate and Forecast (CF) Metadata Conventions
 CF People
+v1.6, 5 December 2011
 :toc: macro
 
-Original authors:: Brian, ...
+Version {revnumber}, {revdate}
 
-Additional authors:: John, ...
+Original authors::
+* Brian
+* Jonathan
+* Bob
+* Karl
+* Steve
+
+Additional authors::
+* John
+* Rich
+* Phil
+* Greg
+* Heinke
+* Alison
+* Martin
 
 <<appendix-b-standard-name-table-format>>
 
