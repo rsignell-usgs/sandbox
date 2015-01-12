@@ -21,7 +21,7 @@ toc::[]
 
 === Goals
 
-Blah blah blah ...
+The NetCDF library <<NetCDF>> is designed ...
 
 == NetCDF files and components
 
@@ -60,3 +60,9 @@ All CF attributes are listed here...
 
 |1e2|hecto|h| |1e-2|centi|c
 |===
+
+[bibliography]
+== Bibliography
+- [[[COARDS]]] Conventions for the standardization [sic] ...
+- [[[FGDC]]] Content standard for digital geospatial metadata.
+- [[[NetCDF]]] NetCDF software package...
