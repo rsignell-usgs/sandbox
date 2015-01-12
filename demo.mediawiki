@@ -11,7 +11,7 @@ This is a link to another page: [[other.mediawiki]]
 
 Links to somewhere else on this page:
 
-Auto-anchors: [[#Chapter 2]], [[#Chapter 2|custom link text]]
+Auto-anchors: [[#chapter-2]], [[#chapter-2|custom link text]]
 Custom anchors: [[#FooBar]]
 
 === Section 1.1 ===
