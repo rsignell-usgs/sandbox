@@ -23,6 +23,17 @@ toc::[]
 
 The NetCDF library <<NetCDF>> is designed ...
 
+=== Terminology
+
+auxiliary coordinate variable::
+Any netCDF variable that contains coordinate data...
+
+boundary variable::
+A boundary variable is associated with a ...
+
+CDL syntax::
+The ASCII format used to describe the ...
+
 == NetCDF files and components
 
 Blah ...
