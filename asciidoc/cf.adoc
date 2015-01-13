@@ -1,28 +1,7 @@
 = NetCDF Climate and Forecast (CF) Metadata Conventions
 Brian Eaton, NCAR; Jonathan Gregory, Hadley Centre, UK Met Office; Bob Drach, PCMDI, LLNL; Karl Taylor, PCMDI, LLNL; Steve Hankin, PMEL, NOAA; John Caron, UCAR; Rich Signell, USGS; Phil Bentley, Hadley Centre, UK Met Office; Greg Rappa, MIT; Heinke Höck, DKRZ; Alison Pamment, BADC; Martin Juckes, BADC; Andrew Walsh, METOC
-
-The {author} and {author_2} and ...
-
 v1.6, 5 December 2011
 :toc: macro
-
-Version {revnumber}, {revdate}
-
-Original authors::
-* Brian
-* Jonathan
-* Bob
-* Karl
-* Steve
-
-Additional authors::
-* John
-* Rich
-* Phil
-* Greg
-* Heinke
-* Alison
-* Martin
 
 [abstract]
 == Abstract
@@ -104,15 +83,15 @@ Can we do a coloured table...?
 |{set:cellbgcolor:green}green
 |{set:cellbgcolor!}
 plain
-|{set:cellbgcolor:red}red
+|{set:cellbgcolor:#bc8844}custom
 |{set:cellbgcolor!}
 plain
 |===
 
 [cols="4"]
 |===
-|{set:cellbgcolor:red} (i1, o1) 
-| (i2, o1) | (i3, o1) | (i4, o1)
+|{set:cellbgcolor:red} (i1, o1)
+|{set:cellbgcolor!} (i2, o1) | (i3, o1) | (i4, o1)
 | (i1, o2) | (i2, o2) | (i3, o2) | (i4, o2)
 | (i1, o3) | (i2, o3) | (i3, o3) | (i4, o3)
 |===

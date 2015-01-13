@@ -1,0 +1,24 @@
+env:
+  global:
+    secure: OgpkL6mN2b2g0RK8KJl4iDKjoyX0xvo3Wp88V9ierE7a5yng/3G6zIaoyaTmfnoQLPFDHLPOgLu02e4y+oge9mA8koB4JmlBsfemAHJYNeA4APPEfj9VWUBt4MD6JunXugRFZOc3IZDzjRnsEk6sF+YMAP0kDAbHlP+jvaKtSt8=
+
+before_script:
+    - git config --global user.email $GIT_EMAIL
+    - git config --global user.name $GIT_NAME
+
+install:
+    - gem install asciidoctor
+    - asciidoctor --version
+
+script:
+    - asciidoctor asciidoc/cf.adoc
+
+after_success:
+    - ls asciidoc
+    - git clone https://${GH_TOKEN}@github.com/cf-metadata/cf-metadata.github.io.git pages
+    - mv asciidoc/cf.html pages/
+    - cd pages
+    - echo $TRAVIS_COMMIT >> cf.html
+    - git add cf.html
+    - git commit -m 'Test'
+    - git push origin master
