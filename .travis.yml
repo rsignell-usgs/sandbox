@@ -18,7 +18,6 @@ after_success:
     - git clone https://${GH_TOKEN}@github.com/cf-metadata/cf-metadata.github.io.git pages
     - mv asciidoc/cf.html pages/
     - cd pages
-    - echo $TRAVIS_COMMIT >> cf.html
     - git add cf.html
     - git commit -m 'Test'
     - git push origin master
