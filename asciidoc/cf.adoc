@@ -1,5 +1,8 @@
 = NetCDF Climate and Forecast (CF) Metadata Conventions
-CF People
+Brian Eaton, NCAR; Jonathan Gregory, Hadley Centre, UK Met Office; Bob Drach, PCMDI, LLNL; Karl Taylor, PCMDI, LLNL; Steve Hankin, PMEL, NOAA; John Caron, UCAR; Rich Signell, USGS; Phil Bentley, Hadley Centre, UK Met Office; Greg Rappa, MIT; Heinke Höck, DKRZ; Alison Pamment, BADC; Martin Juckes, BADC; Andrew Walsh, METOC
+
+The {author} and {author_2} and ...
+
 v1.6, 5 December 2011
 :toc: macro
 
