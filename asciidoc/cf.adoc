@@ -18,9 +18,13 @@ Revision history:: This document will be updated to reflect ...
 :numbered:
 
 include::01-introduction.adoc[]
+
 include::02-netcdf-files-and-components.adoc[]
+
 include::03-description-of-the-data.adoc[]
+
 include::04-coordinate-types.adoc[]
+
 include::09-discrete-sampling-geometries.adoc[]
 
 :!numbered:
