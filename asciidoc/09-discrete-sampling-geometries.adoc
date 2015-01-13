@@ -1,20 +1,48 @@
 == Discrete sampling geometries
 
-Can we do a coloured table...?
+This chapter provides representations for discrete sampling geometries, such as time series, vertical profiles and trajectories. Discrete sampling geometry datasets are characterized by a dimensionality that is lower than that of the space-time region that is sampled; discrete sampling geometries are typically “paths” through space-time.
 
-|===
-|{set:cellbgcolor:green}green
-|{set:cellbgcolor!}
-plain
-|{set:cellbgcolor:#bc8844}custom
-|{set:cellbgcolor!}
-plain
-|===
+=== Features and feature types
 
+=== Collections, instances and elements
+
+=== Representations of collections of features in data variables
+
+The individual features within a collection need not necessarily contain the same number of elements.   For instance observed in situ time series will commonly contain unique numbers of time points, reflecting different deployment dates of the instruments.   Other data sources, such as the output of numerical models, may commonly generate features of identical size.  CF offers multiple representations to allow the storage to be optimized for the character of the data.  Four types of representation are utilized in this chapter:
+
+* two *multidimensional array representations*, in which each feature instance is allocated the identical amount of storage space.  In these representations the instance dimension and the element dimension(s) are distinct CF coordinate axes (typical of coordinate axes discussed in chapter 4); and
+
+* two *ragged array representations*, in which each feature is provided with the minimum amount of space that it requires.  In these representations the instances of the individual features are stacked sequentially along the same array dimension as the elements of the features; we refer to this combined dimension as the *sample dimension*.
+
+In the multidimensional array representations, data variables have both an instance dimension and an element dimension.  The dimensions may be given in any order.  If there is a need for either the instance or an element dimension to be the netCDF unlimited dimension (so that more features or more elements can be appended), then that dimension must be the outer dimension of the data variable i.e. the leading dimension in CDL.
+
+In the ragged array representations, the instance dimension (`i`), which sequences the individual features within the collection, and the element dimension, which sequences the data elements of each feature (`o` and `p`), both occupy the same dimension (the sample dimension).   If the sample dimension is the netCDF unlimited dimension, new data can be appended to the file.
+
+In all representations, the instance dimension (which is also the sample dimension in ragged representations) may be set initially to a size that is arbitrarily larger than what is required for the features which are available at the time that the file is created.   Allocating unused array space in this way (pre-filled with missing values -- see also section 9.6, Missing data), can be useful as a means to reserve space that will be available to add features at a later time.
+
+==== Orthogonal multidimensional array representation
+
+The *orthogonal multidimensional array* representation, the simplest representation, can be used if each feature instance in the collection has identical coordinates along the element axis of the features.  For example, for a collection of the timeSeries that share a common set of times, or a collection of profiles that share a common set of vertical levels, this is likely to be the natural representation to use.  In both examples, there will be longitude and latitude coordinate variables, x(i), y(i), that are one-dimensional and defined along the instance dimension.
+
+<<ortho_multi, Table 2>> Table 9.2 illustrates the storage of a data variable using the orthogonal multidimensional array representation.  The data variable holds a collection of 4 features.  The individual features, distinguished by color, are sequenced along the horizontal axis by the instance dimension indices, i1, i2, i3, i4.  Each instance contains three elements, sequenced along the vertical with element dimension indices, o1, o2, o3.  The i and o subscripts would be interchanged (i.e. Table 9.2 would be transposed) if the element dimension were the netCDF unlimited dimension.
+
+[[ortho_multi]]
+.The storage of a data variable using the orthogonal multidimensional array representation (subscripts in CDL order).
 [cols="4"]
 |===
-|{set:cellbgcolor:red} (i1, o1)
-|{set:cellbgcolor!} (i2, o1) | (i3, o1) | (i4, o1)
-| (i1, o2) | (i2, o2) | (i3, o2) | (i4, o2)
-| (i1, o3) | (i2, o3) | (i3, o3) | (i4, o3)
+|{set:cellbgcolor:#99dddd} (i1, o1)
+|{set:cellbgcolor:#f6c682} (i2, o1)
+|{set:cellbgcolor:#d4b4de} (i3, o1)
+|{set:cellbgcolor:#ddaaaa} (i4, o1)
+
+|{set:cellbgcolor:#99dddd} (i1, o2)
+|{set:cellbgcolor:#f6c682} (i2, o2)
+|{set:cellbgcolor:#d4b4de} (i3, o2)
+|{set:cellbgcolor:#ddaaaa} (i4, o2)
+
+|{set:cellbgcolor:#99dddd} (i1, o3)
+|{set:cellbgcolor:#f6c682} (i2, o3)
+|{set:cellbgcolor:#d4b4de} (i3, o3)
+|{set:cellbgcolor:#ddaaaa} (i4, o3)
 |===
+{set:cellbgcolor!}

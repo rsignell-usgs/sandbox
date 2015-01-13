@@ -1,3 +1,39 @@
 == NetCDF files and components
 
-Blah ...
+=== Filename
+
+=== Data types
+
+=== Naming conventions
+
+=== Dimensions
+
+=== Variables
+
+=== Attributes
+
+==== Identification of conventions
+
+==== Description of file contents
+
+The following attributes are intended to provide information about where the data came from and what has been done to it. This information is mainly for the benefit of human readers. The attribute values are all character strings. For readability in ncdump outputs it is recommended to embed newline characters into long strings to break them into lines. For backwards compatibility with COARDS none of these global attributes is required.
+
+The NUG defines `title` and `history` to be global attributes. We wish to allow the newly defined attributes, i.e., `institution`, `source`, `references`, and `comment`, to be either global or assigned to individual variables. When an attribute appears both globally and as a variable attribute, the variable's version has precedence.
+
+`title`::
+    A succinct description of what is in the dataset.
+
+`institution`::
+    Specifies where the original data was produced.
+
+`source`::
+    The method of production of the original data. If it was model-generated, `source` should name the model and its version, as specifically as could be useful. If it is observational, `source` should characterize it (e.g., `"surface observation"` or `"radiosonde"`).
+
+`history`::
+    Provides an audit trail for modifications to the original data. Well-behaved generic netCDF filters will automatically append their name and the parameters with which they were invoked to the global history attribute of an input netCDF file. We recommend that each line begin with a timestamp indicating the date and time of day that the program was executed.
+
+`references`::
+    Published or web-based references that describe the data or methods used to produce it.
+
+`comment`::
+    Miscellaneous information about the data or methods used to produce it.
