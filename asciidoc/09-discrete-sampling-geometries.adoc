@@ -1,0 +1,20 @@
+== Discrete sampling geometries
+
+Can we do a coloured table...?
+
+|===
+|{set:cellbgcolor:green}green
+|{set:cellbgcolor!}
+plain
+|{set:cellbgcolor:#bc8844}custom
+|{set:cellbgcolor!}
+plain
+|===
+
+[cols="4"]
+|===
+|{set:cellbgcolor:red} (i1, o1)
+|{set:cellbgcolor!} (i2, o1) | (i3, o1) | (i4, o1)
+| (i1, o2) | (i2, o2) | (i3, o2) | (i4, o2)
+| (i1, o3) | (i2, o3) | (i3, o3) | (i4, o3)
+|===

@@ -17,106 +17,15 @@ Revision history:: This document will be updated to reflect ...
 
 :numbered:
 
-[[intro]]
-== Introduction
-
-=== Goals
-
-The NetCDF library <<NetCDF>> is designed ...
-
-=== Terminology
-
-auxiliary coordinate variable::
-Any netCDF variable that contains coordinate data...
-
-boundary variable::
-A boundary variable is associated with a ...
-
-CDL syntax::
-The ASCII format used to describe the ...
-
-=== Overview
-
-No variable or ...
-<<Attributes>> 
-<<Attributes,Some attributes>>
-<<Appendix A: Attributes>> 
-<<Appendix A: Attributes,Some attributes>>
-<<appendix-a-attributes>>
-<<appendix-a-attributes,more attributes>>
-contains a summary
-of all the attributes used in this convention.
-
-We recommend that the NUG defined attribute `Conventions` be given the string
-value `"CF-1.6"` to identify datasets that conform to these conventions.
-
-
-== NetCDF files and components
-
-Blah ...
-
-== Description of the data
-
-=== Units
-
-Blah blah ...
-
-.Supported units
-|===
-|Factor|Prefix|Abbreviation| |Factor|Prefix|Abbreviation
-
-|1e1|deca,deka|da| |1e-1|deci|d
-
-|1e2|hecto|h| |1e-2|centi|c
-|===
-
-include::chapter4.adoc[]
-*NB. This isn't very useful, as it doesn't turn up in the TOC.
+include::01-introduction.adoc[]
+include::02-netcdf-files-and-components.adoc[]
+include::03-description-of-the-data.adoc[]
+include::04-coordinate-types.adoc[]
+include::09-discrete-sampling-geometries.adoc[]
 
 :!numbered:
 
-== Discrete sampling geometries
+include::A-attributes.adoc[]
+include::B-standard-name-table-format.adoc[]
 
-Can we do a coloured table...?
-
-|===
-|{set:cellbgcolor:green}green
-|{set:cellbgcolor!}
-plain
-|{set:cellbgcolor:#bc8844}custom
-|{set:cellbgcolor!}
-plain
-|===
-
-[cols="4"]
-|===
-|{set:cellbgcolor:red} (i1, o1)
-|{set:cellbgcolor!} (i2, o1) | (i3, o1) | (i4, o1)
-| (i1, o2) | (i2, o2) | (i3, o2) | (i4, o2)
-| (i1, o3) | (i2, o3) | (i3, o3) | (i4, o3)
-|===
-
-[appendix]
-== Attributes
-
-All CF attributes are listed here...
-
-.Attributes
-|===
-|Factor|Prefix|Abbreviation| |Factor|Prefix|Abbreviation
-
-|1e1|deca,deka|da| |1e-1|deci|d
-
-|1e2|hecto|h| |1e-2|centi|c
-|===
-
-[appendix]
-== Standard name table format
-
-The CF standard name table is ...
-
-[bibliography]
-== Bibliography
-- [[[COARDS]]] Conventions for the standardization [sic] ...
-- [[[FGDC]]] Content standard for digital geospatial metadata.
-- [[[NetCDF]]] NetCDF software package...
+include::bibliography.adoc[]

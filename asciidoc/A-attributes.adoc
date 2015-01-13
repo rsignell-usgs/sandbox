@@ -1,0 +1,13 @@
+[appendix]
+== Attributes
+
+All CF attributes are listed here...
+
+.Attributes
+|===
+|Factor|Prefix|Abbreviation| |Factor|Prefix|Abbreviation
+
+|1e1|deca,deka|da| |1e-1|deci|d
+
+|1e2|hecto|h| |1e-2|centi|c
+|===
